@@ -1,0 +1,49 @@
+Iniciando pruebas de rendimiento - 20250607_224654
+=== Pruebas para Kubernetes ===
+Test curl simple - kubernetes - URL: http://127.0.0.1:54433
+Curl intento 1:
+
+real	0m0.028s
+user	0m0.007s
+sys	0m0.010s
+Curl intento 2:
+
+real	0m0.026s
+user	0m0.007s
+sys	0m0.009s
+Curl intento 3:
+
+real	0m0.031s
+user	0m0.008s
+sys	0m0.011s
+
+Test carga ApacheBench - kubernetes - URL: http://127.0.0.1:54433 - Req: 100, Conc: 10
+Resultado guardado en resultados/ab_kubernetes_20250607_224654.log
+
+Estadísticas Kubernetes pods y nodo:
+Guardado en resultados/k8s_top_pods_20250607_224654.log y resultados/k8s_top_nodes_20250607_224654.log
+
+=== Pruebas para Docker tradicional ===
+Test curl simple - docker - URL: http://localhost:8080
+Curl intento 1:
+
+real	0m0.024s
+user	0m0.007s
+sys	0m0.009s
+Curl intento 2:
+
+real	0m0.025s
+user	0m0.007s
+sys	0m0.009s
+Curl intento 3:
+
+real	0m0.024s
+user	0m0.007s
+sys	0m0.009s
+
+Test carga ApacheBench - docker - URL: http://localhost:8080 - Req: 100, Conc: 10
+Resultado guardado en resultados/ab_docker_20250607_224654.log
+
+Estadísticas Docker snapshot para contenedor nginx-balancer:
+Guardado en resultados/docker_stats_nginx-balancer_20250607_224654.log
+

@@ -1,0 +1,2 @@
+CONTAINER        CPU %     MEM USAGE / LIMIT
+nginx-balancer   0.00%     2.316MiB / 7.655GiB

@@ -1,0 +1,25 @@
+
+services:
+  php1:
+    build: .
+    container_name: php1
+
+  php2:
+    build: .
+    container_name: php2
+
+  php3:
+    build: .
+    container_name: php3
+
+  nginx:
+    image: nginx:alpine
+    container_name: nginx-balancer
+    ports:
+      - "8080:80"
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf
+    depends_on:
+      - php1
+      - php2
+      - php3
