@@ -1,0 +1,25 @@
+FROM nginx:latest
+
+# Crear directorio para certificados SSL
+RUN mkdir -p /etc/nginx/ssl
+
+# Copiar certificados SSL al contenedor
+COPY certificados_mmnuria/certificado_mmnuria.crt /etc/nginx/ssl/certificado_mmnuria.crt
+COPY certificados_mmnuria/certificado_mmnuria.key /etc/nginx/ssl/certificado_mmnuria.key
+
+# Copiar archivo de configuración SSL
+COPY mmnuria-nginx-ssl.conf /etc/nginx/nginx.conf
+
+# Copiar script de reglas de iptables
+COPY P4-mmnuria-iptables-web/mmnuria-iptables-web.sh /mmnuria-iptables-web.sh
+RUN chmod +x /mmnuria-iptables-web.sh
+
+# Copiar script de entrada
+COPY P4-mmnuria-iptables-web/entrypoint.sh /entrypoint.sh
+RUN chmod +x /entrypoint.sh
+
+# Exponer el puerto HTTP y HTTPS
+EXPOSE 80
+EXPOSE 443
+
+ENTRYPOINT ["/entrypoint.sh"]

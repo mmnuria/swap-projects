@@ -1,0 +1,15 @@
+# Usamos la imagen creada en la práctica 3
+FROM mmnuria/mmnuria-apache-image:p3
+
+# Instalar IPTABLES
+RUN apt-get update && apt-get install -y iptables && apt-get clean
+
+# Copiar script de entrada y script de reglas de iptables al contenedor
+COPY P4-mmnuria-iptables-web/entrypoint.sh /entrypoint.sh
+COPY P4-mmnuria-iptables-web/mmnuria-iptables-web.sh /mmnuria-iptables-web.sh
+
+# Dar permisos de ejecución a los scripts
+RUN chmod +x /entrypoint.sh /mmnuria-iptables-web.sh
+
+# Configurar entrypoint para ejecutar primero las reglas de iptables y luego Apache
+ENTRYPOINT ["/entrypoint.sh"]
