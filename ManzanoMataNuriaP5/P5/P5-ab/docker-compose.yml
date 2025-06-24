@@ -1,0 +1,16 @@
+
+services:
+ apache-benchmark-P5:
+  build:
+   context: .
+   dockerfile: DockerFileAb
+  image: mmnuria-ab-image:p5
+  container_name: apache_benchmark-P5
+  command: [ "ab", "-n", "10000", "-c", "100", "https://192.168.10.50:443/" ]
+  networks:
+   p5-granjaweb_red_web:
+    ipv4_address: 192.168.10.60
+
+networks:
+ p5-granjaweb_red_web:
+  external: true

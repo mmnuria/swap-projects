@@ -1,0 +1,27 @@
+services:
+ master-mmnuria:
+  image: locustio/locust
+  ports:
+   - "8098:8089"
+  volumes:
+   - ./:/mnt/locust
+  command: -f /mnt/locust/locustfile.py --master -H https://192.168.10.50:443/
+  networks:
+   p5-granjaweb_red_web:
+    ipv4_address: 192.168.10.70
+
+ worker-mmnuria:
+  image: locustio/locust
+  volumes:
+   - ./:/mnt/locust
+  command: -f /mnt/locust/locustfile.py --worker --master-host master-mmnuria
+  depends_on:
+   - master-mmnuria
+  deploy:
+   replicas: 6
+  networks:
+   - p5-granjaweb_red_web
+
+networks:
+ p5-granjaweb_red_web:
+  external: true

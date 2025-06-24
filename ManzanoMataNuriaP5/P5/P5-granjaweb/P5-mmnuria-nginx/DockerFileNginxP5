@@ -1,0 +1,15 @@
+FROM nginx:latest
+
+# Crear directorio para certificados SSL
+RUN mkdir -p /etc/nginx/ssl
+
+# Copiar certificados SSL al contenedor
+COPY certificados_mmnuria/certificado_mmnuria.crt /etc/nginx/ssl/certificado_mmnuria.crt
+COPY certificados_mmnuria/certificado_mmnuria.key /etc/nginx/ssl/certificado_mmnuria.key
+
+# Copiar archivo de configuración SSL
+COPY mmnuria-nginx-ssl.conf /etc/nginx/nginx.conf
+
+# Exponer el puerto HTTP y HTTPS
+EXPOSE 80
+EXPOSE 443

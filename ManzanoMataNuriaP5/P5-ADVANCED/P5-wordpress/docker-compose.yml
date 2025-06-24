@@ -1,0 +1,35 @@
+
+services:
+  db:
+    image: mysql:5.7
+    container_name: wpdb-p5
+    restart: always
+    environment:
+      MYSQL_DATABASE: wordpress
+      MYSQL_USER: wpuser
+      MYSQL_PASSWORD: wppass
+      MYSQL_ROOT_PASSWORD: rootpass
+    networks:
+      p5-granjaweb_red_servicios:
+        ipv4_address: 192.168.20.101
+
+  wordpress:
+    image: wordpress:latest
+    container_name: wordpress-p5
+    restart: always
+    environment:
+      WORDPRESS_DB_HOST: db
+      WORDPRESS_DB_NAME: wordpress
+      WORDPRESS_DB_USER: wpuser
+      WORDPRESS_DB_PASSWORD: wppass
+    depends_on:
+      - db
+    ports:
+      - "8099:80"
+    networks:
+      p5-granjaweb_red_servicios:
+        ipv4_address: 192.168.20.100
+
+networks:
+  p5-granjaweb_red_servicios:
+    external: true

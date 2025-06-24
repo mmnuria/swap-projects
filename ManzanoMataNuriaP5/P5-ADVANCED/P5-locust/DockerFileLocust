@@ -1,0 +1,3 @@
+From locustio/locustio
+
+RUN pip install beautifulsoup4
