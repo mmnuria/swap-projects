@@ -1,0 +1,46 @@
+FROM debian:bullseye
+
+# Instalar Nginx y PHP-FPM
+RUN apt-get update && apt-get install -y \
+    nginx \
+    php-fpm \
+    php-mysql \
+    php-gd \
+    php-curl \
+    php-xml \
+    php-mbstring \
+    iputils-ping \
+    iproute2 \
+    net-tools \
+    curl \
+    htop \
+    logrotate \
+    && apt-get clean \
+    && rm -rf /var/lib/apt/lists/*
+
+# Copiar el archivo nginx.conf directamente al contenedor
+COPY ./config/nginx/nginx.conf /etc/nginx/nginx.conf
+
+# Configurar PHP
+RUN echo "cgi.fix_pathinfo=0" >> /etc/php/7.4/fpm/php.ini && \
+    echo "upload_max_filesize = 20M" >> /etc/php/7.4/fpm/php.ini && \
+    echo "post_max_size = 21M" >> /etc/php/7.4/fpm/php.ini && \
+    echo "memory_limit = 256M" >> /etc/php/7.4/fpm/php.ini
+
+# Configurar PHP-FPM para usar TCP en lugar de socket
+RUN sed -i 's|listen = /run/php/php7.4-fpm.sock|listen = 127.0.0.1:9000|g' /etc/php/7.4/fpm/pool.d/www.conf
+
+WORKDIR /var/www/html
+
+# Configurar permisos para que Nginx y PHP puedan acceder
+RUN chown -R www-data:www-data /var/www/html && chmod -R 755 /var/www/html
+
+# Copiar script de inicio
+COPY ./scripts/inicio-nginx.sh /usr/local/bin/start.sh
+RUN chmod +x /usr/local/bin/start.sh
+
+# Exponer puertos
+EXPOSE 80 443
+
+# Iniciar Nginx y PHP-FPM
+CMD ["/usr/local/bin/start.sh"]

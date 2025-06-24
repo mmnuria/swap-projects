@@ -1,0 +1,7 @@
+FROM haproxy:latest
+
+COPY haproxy.cfg /usr/local/etc/haproxy/haproxy.cfg
+
+COPY web_mmnuria /usr/share/haproxy/html
+
+EXPOSE 80

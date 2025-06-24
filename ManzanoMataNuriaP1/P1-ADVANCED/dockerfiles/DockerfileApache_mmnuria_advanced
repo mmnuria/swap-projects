@@ -1,0 +1,64 @@
+FROM debian:bullseye
+
+# Instalar paquetes necesarios
+RUN apt-get update && apt-get install -y \
+    apache2 \
+    php \
+    libapache2-mod-php \
+    php-mysql \
+    php-gd \
+    php-curl \
+    php-xml \
+    php-mbstring \
+    iputils-ping \
+    iproute2 \
+    net-tools \
+    htop \
+    curl \
+    logrotate \
+    nano \
+    vim \
+    && apt-get clean \
+    && rm -rf /var/lib/apt/lists/*
+
+# Habilitar módulos de Apache
+RUN a2enmod php7.4 rewrite headers ssl
+
+# Configuración personalizada de PHP
+RUN echo "max_execution_time = 120" >> /etc/php/7.4/apache2/php.ini && \
+    echo "upload_max_filesize = 20M" >> /etc/php/7.4/apache2/php.ini && \
+    echo "post_max_size = 21M" >> /etc/php/7.4/apache2/php.ini && \
+    echo "memory_limit = 256M" >> /etc/php/7.4/apache2/php.ini
+
+# Configuración personalizada de Apache
+COPY ./config/apache/custom-apache.conf /etc/apache2/conf-available/
+RUN a2enconf custom-apache
+
+# Configurar el directorio raíz de Apache para priorizar index.php
+RUN sed -i 's/DirectoryIndex index.html/DirectoryIndex index.php index.html/' /etc/apache2/mods-enabled/dir.conf
+
+# Configurar virtual hosts
+COPY ./config/apache/vhosts.conf /etc/apache2/sites-available/
+RUN a2ensite vhosts
+
+# Establecer zona horaria
+RUN ln -sf /usr/share/zoneinfo/Europe/Madrid /etc/localtime
+
+# Directorio de trabajo
+WORKDIR /var/www/html
+
+# Configurar permisos correctos
+RUN chown -R www-data:www-data /var/www/html /var/log/apache2
+
+# Configurar rotación de logs
+COPY ./config/apache/apache-logrotate /etc/logrotate.d/apache2
+
+# Copiar scripts de mantenimiento
+COPY ./scripts/mantenimiento.sh /usr/local/bin/
+RUN chmod +x /usr/local/bin/mantenimiento.sh
+
+# Exponer puertos
+EXPOSE 80 443
+
+# Iniciar Apache
+CMD ["apache2ctl", "-D", "FOREGROUND"]

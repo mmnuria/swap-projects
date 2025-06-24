@@ -1,0 +1,48 @@
+FROM debian:bullseye
+
+# Instalar Lighttpd y PHP con FPM
+RUN apt-get update && apt-get install -y \
+    lighttpd \
+    php7.4-fpm \
+    php7.4-cgi \
+    php7.4-mysql \
+    php7.4-gd \
+    php7.4-curl \
+    php7.4-xml \
+    php7.4-mbstring \
+    iputils-ping \
+    iproute2 \
+    net-tools \
+    curl \
+    htop \
+    logrotate \
+    && apt-get clean \
+    && rm -rf /var/lib/apt/lists/*
+
+# Configurar Lighttpd para usar PHP
+RUN lighttpd-enable-mod fastcgi && \
+    lighttpd-enable-mod fastcgi-php
+
+# Copiar configuración personalizada
+COPY ./config/lighttpd/lighttpd.conf /etc/lighttpd/lighttpd.conf
+
+# Modificar la configuración de PHP-FPM para usar el socket en /tmp
+RUN sed -i 's|listen = /run/php/php7.4-fpm.sock|listen = /tmp/php-fastcgi.sock|g' /etc/php/7.4/fpm/pool.d/www.conf && \
+    mkdir -p /var/log/lighttpd && \
+    chown www-data:www-data /var/log/lighttpd
+
+# Crear script de inicio
+COPY ./scripts/inicio-lighttpd.sh /start.sh
+RUN chmod +x /start.sh
+
+# Directorio de trabajo
+WORKDIR /var/www/html
+
+# Configurar permisos
+RUN chown -R www-data:www-data /var/www/html
+
+# Exponer puerto
+EXPOSE 80
+
+# Iniciar servicios
+CMD ["/start.sh"]

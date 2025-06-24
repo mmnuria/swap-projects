@@ -1,0 +1,173 @@
+version: '3.9'
+
+services:
+  web1:
+    build:
+      context: .
+      dockerfile: DockerfileApache
+    image: mmnuria-apache-image:p2
+    container_name: web1_traefik
+    volumes:
+      - ./web_mmnuria:/var/www/html
+    networks:
+      red_web:
+        ipv4_address: 192.168.10.10
+      red_servicios:
+        ipv4_address: 192.168.20.10
+    restart: unless-stopped
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.web.rule=Host(`localhost`)"
+      - "traefik.http.routers.web.entrypoints=web"
+      - "traefik.http.routers.web.service=web-service"
+      - "traefik.http.services.web-service.loadbalancer.server.port=80"
+  
+  web2:
+    image: mmnuria-apache-image:p2
+    container_name: web2_traefik
+    volumes:
+      - ./web_mmnuria:/var/www/html
+    networks:
+      red_web:
+        ipv4_address: 192.168.10.11
+      red_servicios:
+        ipv4_address: 192.168.20.11
+    restart: unless-stopped
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.web.rule=Host(`localhost`)"
+      - "traefik.http.routers.web.entrypoints=web"
+      - "traefik.http.routers.web.service=web-service"
+      - "traefik.http.services.web-service.loadbalancer.server.port=80"
+  
+  web3:
+    image: mmnuria-apache-image:p2
+    container_name: web3_traefik
+    volumes:
+      - ./web_mmnuria:/var/www/html
+    networks:
+      red_web:
+        ipv4_address: 192.168.10.12
+      red_servicios:
+        ipv4_address: 192.168.20.12
+    restart: unless-stopped
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.web.rule=Host(`localhost`)"
+      - "traefik.http.routers.web.entrypoints=web"
+      - "traefik.http.routers.web.service=web-service"
+      - "traefik.http.services.web-service.loadbalancer.server.port=80"
+      
+  web4:
+    image: mmnuria-apache-image:p2
+    container_name: web4_traefik
+    volumes:
+      - ./web_mmnuria:/var/www/html
+    networks:
+      red_web:
+        ipv4_address: 192.168.10.13
+      red_servicios:
+        ipv4_address: 192.168.20.13
+    restart: unless-stopped
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.web.rule=Host(`localhost`)"
+      - "traefik.http.routers.web.entrypoints=web"
+      - "traefik.http.routers.web.service=web-service"
+      - "traefik.http.services.web-service.loadbalancer.server.port=80"
+      
+  web5:
+    image: mmnuria-apache-image:p2
+    container_name: web5_traefik
+    volumes:
+      - ./web_mmnuria:/var/www/html
+    networks:
+      red_web:
+        ipv4_address: 192.168.10.14
+      red_servicios:
+        ipv4_address: 192.168.20.14
+    restart: unless-stopped
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.web.rule=Host(`localhost`)"
+      - "traefik.http.routers.web.entrypoints=web"
+      - "traefik.http.routers.web.service=web-service"
+      - "traefik.http.services.web-service.loadbalancer.server.port=80"
+      
+  web6:
+    image: mmnuria-apache-image:p2
+    container_name: web6_traefik
+    volumes:
+      - ./web_mmnuria:/var/www/html
+    networks:
+      red_web:
+        ipv4_address: 192.168.10.15
+      red_servicios:
+        ipv4_address: 192.168.20.15
+    restart: unless-stopped
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.web.rule=Host(`localhost`)"
+      - "traefik.http.routers.web.entrypoints=web"
+      - "traefik.http.routers.web.service=web-service"
+      - "traefik.http.services.web-service.loadbalancer.server.port=80"
+      
+  web7:
+    image: mmnuria-apache-image:p2
+    container_name: web7_traefik
+    volumes:
+      - ./web_mmnuria:/var/www/html
+    networks:
+      red_web:
+        ipv4_address: 192.168.10.16
+      red_servicios:
+        ipv4_address: 192.168.20.16
+    restart: unless-stopped
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.web.rule=Host(`localhost`)"
+      - "traefik.http.routers.web.entrypoints=web"
+      - "traefik.http.routers.web.service=web-service"
+      - "traefik.http.services.web-service.loadbalancer.server.port=80"
+      
+  web8:
+    image: mmnuria-apache-image:p2
+    container_name: web8_traefik
+    volumes:
+      - ./web_mmnuria:/var/www/html
+    networks:
+      red_web:
+        ipv4_address: 192.168.10.17
+      red_servicios:
+        ipv4_address: 192.168.20.17
+    restart: unless-stopped
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.web.rule=Host(`localhost`)"
+      - "traefik.http.routers.web.entrypoints=web"
+      - "traefik.http.routers.web.service=web-service"
+      - "traefik.http.services.web-service.loadbalancer.server.port=80"
+      
+  # Balanceador
+  traefik:
+    image: traefik:v2.10
+    container_name: traefik
+    command:
+      - --configFile=/etc/traefik/traefik.yml
+    ports:
+      - "8091:80" 
+      - "9001:9000"  
+    volumes:
+      - ./traefik.yml:/etc/traefik/traefik.yml 
+      - /var/run/docker.sock:/var/run/docker.sock  
+    networks:
+      - red_web
+    restart: unless-stopped
+
+networks:
+  red_web:
+    external: true
+    name: p2-mmnuria-nginx_red_web
+  red_servicios:
+    external: true
+    name: p2-mmnuria-nginx_red_servicios

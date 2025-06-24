@@ -1,0 +1,163 @@
+version: '3.9'
+
+services:
+  web1:
+    build:
+        context: .
+        dockerfile: DockerfileApache
+    image: mmnuria-apache-image:p2
+    container_name: web1-cadvisor
+    volumes:
+      - ./web_mmnuria:/var/www/html
+    networks:
+      red_web:
+        ipv4_address: 192.168.10.26
+      red_servicios:
+        ipv4_address: 192.168.20.26
+    ports:
+      - "8080:80"
+    restart: unless-stopped
+
+  web2:
+    image: mmnuria-apache-image:p2
+    container_name: web2-cadvisor
+    volumes:
+      - ./web_mmnuria:/var/www/html
+    networks:
+      red_web:
+        ipv4_address: 192.168.10.27
+      red_servicios:
+        ipv4_address: 192.168.20.27
+    ports:
+      - "8081:80"
+    restart: unless-stopped
+
+  web3:
+    image: mmnuria-apache-image:p2
+    container_name: web3-cadvisor
+    volumes:
+      - ./web_mmnuria:/var/www/html
+    networks:
+      red_web:
+        ipv4_address: 192.168.10.28
+      red_servicios:
+        ipv4_address: 192.168.20.28
+    ports:
+      - "8082:80"
+    restart: unless-stopped
+
+  web4:
+    image: mmnuria-apache-image:p2
+    container_name: web4-cadvisor
+    volumes:
+      - ./web_mmnuria:/var/www/html
+    networks:
+      red_web:
+        ipv4_address: 192.168.10.29
+      red_servicios:
+        ipv4_address: 192.168.20.29
+    ports:
+      - "8083:80"
+    restart: unless-stopped
+
+  web5:
+    image: mmnuria-apache-image:p2
+    container_name: web5-cadvisor
+    volumes:
+      - ./web_mmnuria:/var/www/html
+    networks:
+      red_web:
+        ipv4_address: 192.168.10.30
+      red_servicios:
+        ipv4_address: 192.168.20.30
+    ports:
+      - "8084:80"
+    restart: unless-stopped
+
+  web6:
+    image: mmnuria-apache-image:p2
+    container_name: web6-cadvisor
+    volumes:
+      - ./web_mmnuria:/var/www/html
+    networks:
+      red_web:
+        ipv4_address: 192.168.10.31
+      red_servicios:
+        ipv4_address: 192.168.20.31
+    ports:
+      - "8085:80"
+    restart: unless-stopped
+
+  web7:
+    image: mmnuria-apache-image:p2
+    container_name: web7-cadvisor
+    volumes:
+      - ./web_mmnuria:/var/www/html
+    networks:
+      red_web:
+        ipv4_address: 192.168.10.32
+      red_servicios:
+        ipv4_address: 192.168.20.32
+    ports:
+      - "8086:80"
+    restart: unless-stopped
+
+  web8:
+    image: mmnuria-apache-image:p2
+    container_name: web8-cadvisor
+    volumes:
+      - ./web_mmnuria:/var/www/html
+    networks:
+      red_web:
+        ipv4_address: 192.168.10.33
+      red_servicios:
+        ipv4_address: 192.168.20.33
+    ports:
+      - "8087:80"
+    restart: unless-stopped
+
+  # Balanceador
+  nginx:
+    build:
+      context: .
+      dockerfile: DockerfileNginx
+    image: mmnuria-nginx-image:p2
+    container_name: balanceador-nginx-cadvisor
+    depends_on:
+      - web1
+      - web2
+      - web3
+      - web4
+      - web5
+      - web6
+      - web7
+      - web8
+    ports:
+      - "8090:80"  # Puerto para acceso externo al balanceador
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf
+    networks:
+      red_web:
+        ipv4_address: 192.168.10.50
+  
+  #Monitorizar recursos con cAdvisor
+  cadvisor:
+    image: gcr.io/cadvisor/cadvisor:latest
+    container_name: cadvisor
+    volumes:
+      - /:/rootfs:ro
+      - /var/run:/var/run:ro
+      - /sys:/sys:ro
+      - /var/lib/docker/:/var/lib/docker:ro
+    ports:
+      - "8088:8080"
+    networks:
+      - red_web
+
+networks:
+  red_web:
+    external: true
+    name: p2-mmnuria-nginx_red_web
+  red_servicios:
+    external: true
+    name: p2-mmnuria-nginx_red_servicios

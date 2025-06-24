@@ -1,0 +1,900 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Práctica 2 SWAP - Nuria Manzano Mata</title>
+</head>
+<body>
+    <h1>Práctica 2 SWAP - Nuria Manzano Mata</h1>
+    <p>La dirección IP del servidor es: 192.168.10.7</p></body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Práctica 2 SWAP - Nuria Manzano Mata</title>
+</head>
+<body>
+    <h1>Práctica 2 SWAP - Nuria Manzano Mata</h1>
+    <p>La dirección IP del servidor es: 192.168.10.8</p></body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Práctica 2 SWAP - Nuria Manzano Mata</title>
+</head>
+<body>
+    <h1>Práctica 2 SWAP - Nuria Manzano Mata</h1>
+    <p>La dirección IP del servidor es: 192.168.10.9</p></body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Práctica 2 SWAP - Nuria Manzano Mata</title>
+</head>
+<body>
+    <h1>Práctica 2 SWAP - Nuria Manzano Mata</h1>
+    <p>La dirección IP del servidor es: 192.168.10.2</p></body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Práctica 2 SWAP - Nuria Manzano Mata</title>
+</head>
+<body>
+    <h1>Práctica 2 SWAP - Nuria Manzano Mata</h1>
+    <p>La dirección IP del servidor es: 192.168.10.4</p></body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Práctica 2 SWAP - Nuria Manzano Mata</title>
+</head>
+<body>
+    <h1>Práctica 2 SWAP - Nuria Manzano Mata</h1>
+    <p>La dirección IP del servidor es: 192.168.10.6</p></body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Práctica 2 SWAP - Nuria Manzano Mata</title>
+</head>
+<body>
+    <h1>Práctica 2 SWAP - Nuria Manzano Mata</h1>
+    <p>La dirección IP del servidor es: 192.168.10.7</p></body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Práctica 2 SWAP - Nuria Manzano Mata</title>
+</head>
+<body>
+    <h1>Práctica 2 SWAP - Nuria Manzano Mata</h1>
+    <p>La dirección IP del servidor es: 192.168.10.8</p></body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Práctica 2 SWAP - Nuria Manzano Mata</title>
+</head>
+<body>
+    <h1>Práctica 2 SWAP - Nuria Manzano Mata</h1>
+    <p>La dirección IP del servidor es: 192.168.10.9</p></body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Práctica 2 SWAP - Nuria Manzano Mata</title>
+</head>
+<body>
+    <h1>Práctica 2 SWAP - Nuria Manzano Mata</h1>
+    <p>La dirección IP del servidor es: 192.168.10.2</p></body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Práctica 2 SWAP - Nuria Manzano Mata</title>
+</head>
+<body>
+    <h1>Práctica 2 SWAP - Nuria Manzano Mata</h1>
+    <p>La dirección IP del servidor es: 192.168.10.4</p></body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Práctica 2 SWAP - Nuria Manzano Mata</title>
+</head>
+<body>
+    <h1>Práctica 2 SWAP - Nuria Manzano Mata</h1>
+    <p>La dirección IP del servidor es: 192.168.10.6</p></body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Práctica 2 SWAP - Nuria Manzano Mata</title>
+</head>
+<body>
+    <h1>Práctica 2 SWAP - Nuria Manzano Mata</h1>
+    <p>La dirección IP del servidor es: 192.168.10.7</p></body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Práctica 2 SWAP - Nuria Manzano Mata</title>
+</head>
+<body>
+    <h1>Práctica 2 SWAP - Nuria Manzano Mata</h1>
+    <p>La dirección IP del servidor es: 192.168.10.8</p></body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Práctica 2 SWAP - Nuria Manzano Mata</title>
+</head>
+<body>
+    <h1>Práctica 2 SWAP - Nuria Manzano Mata</h1>
+    <p>La dirección IP del servidor es: 192.168.10.9</p></body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Práctica 2 SWAP - Nuria Manzano Mata</title>
+</head>
+<body>
+    <h1>Práctica 2 SWAP - Nuria Manzano Mata</h1>
+    <p>La dirección IP del servidor es: 192.168.10.2</p></body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Práctica 2 SWAP - Nuria Manzano Mata</title>
+</head>
+<body>
+    <h1>Práctica 2 SWAP - Nuria Manzano Mata</h1>
+    <p>La dirección IP del servidor es: 192.168.10.4</p></body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Práctica 2 SWAP - Nuria Manzano Mata</title>
+</head>
+<body>
+    <h1>Práctica 2 SWAP - Nuria Manzano Mata</h1>
+    <p>La dirección IP del servidor es: 192.168.10.6</p></body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Práctica 2 SWAP - Nuria Manzano Mata</title>
+</head>
+<body>
+    <h1>Práctica 2 SWAP - Nuria Manzano Mata</h1>
+    <p>La dirección IP del servidor es: 192.168.10.7</p></body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Práctica 2 SWAP - Nuria Manzano Mata</title>
+</head>
+<body>
+    <h1>Práctica 2 SWAP - Nuria Manzano Mata</h1>
+    <p>La dirección IP del servidor es: 192.168.10.8</p></body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Práctica 2 SWAP - Nuria Manzano Mata</title>
+</head>
+<body>
+    <h1>Práctica 2 SWAP - Nuria Manzano Mata</h1>
+    <p>La dirección IP del servidor es: 192.168.10.9</p></body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Práctica 2 SWAP - Nuria Manzano Mata</title>
+</head>
+<body>
+    <h1>Práctica 2 SWAP - Nuria Manzano Mata</h1>
+    <p>La dirección IP del servidor es: 192.168.10.2</p></body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Práctica 2 SWAP - Nuria Manzano Mata</title>
+</head>
+<body>
+    <h1>Práctica 2 SWAP - Nuria Manzano Mata</h1>
+    <p>La dirección IP del servidor es: 192.168.10.4</p></body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Práctica 2 SWAP - Nuria Manzano Mata</title>
+</head>
+<body>
+    <h1>Práctica 2 SWAP - Nuria Manzano Mata</h1>
+    <p>La dirección IP del servidor es: 192.168.10.6</p></body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Práctica 2 SWAP - Nuria Manzano Mata</title>
+</head>
+<body>
+    <h1>Práctica 2 SWAP - Nuria Manzano Mata</h1>
+    <p>La dirección IP del servidor es: 192.168.10.7</p></body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Práctica 2 SWAP - Nuria Manzano Mata</title>
+</head>
+<body>
+    <h1>Práctica 2 SWAP - Nuria Manzano Mata</h1>
+    <p>La dirección IP del servidor es: 192.168.10.8</p></body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Práctica 2 SWAP - Nuria Manzano Mata</title>
+</head>
+<body>
+    <h1>Práctica 2 SWAP - Nuria Manzano Mata</h1>
+    <p>La dirección IP del servidor es: 192.168.10.9</p></body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Práctica 2 SWAP - Nuria Manzano Mata</title>
+</head>
+<body>
+    <h1>Práctica 2 SWAP - Nuria Manzano Mata</h1>
+    <p>La dirección IP del servidor es: 192.168.10.2</p></body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Práctica 2 SWAP - Nuria Manzano Mata</title>
+</head>
+<body>
+    <h1>Práctica 2 SWAP - Nuria Manzano Mata</h1>
+    <p>La dirección IP del servidor es: 192.168.10.4</p></body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Práctica 2 SWAP - Nuria Manzano Mata</title>
+</head>
+<body>
+    <h1>Práctica 2 SWAP - Nuria Manzano Mata</h1>
+    <p>La dirección IP del servidor es: 192.168.10.6</p></body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Práctica 2 SWAP - Nuria Manzano Mata</title>
+</head>
+<body>
+    <h1>Práctica 2 SWAP - Nuria Manzano Mata</h1>
+    <p>La dirección IP del servidor es: 192.168.10.7</p></body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Práctica 2 SWAP - Nuria Manzano Mata</title>
+</head>
+<body>
+    <h1>Práctica 2 SWAP - Nuria Manzano Mata</h1>
+    <p>La dirección IP del servidor es: 192.168.10.8</p></body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Práctica 2 SWAP - Nuria Manzano Mata</title>
+</head>
+<body>
+    <h1>Práctica 2 SWAP - Nuria Manzano Mata</h1>
+    <p>La dirección IP del servidor es: 192.168.10.9</p></body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Práctica 2 SWAP - Nuria Manzano Mata</title>
+</head>
+<body>
+    <h1>Práctica 2 SWAP - Nuria Manzano Mata</h1>
+    <p>La dirección IP del servidor es: 192.168.10.2</p></body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Práctica 2 SWAP - Nuria Manzano Mata</title>
+</head>
+<body>
+    <h1>Práctica 2 SWAP - Nuria Manzano Mata</h1>
+    <p>La dirección IP del servidor es: 192.168.10.4</p></body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Práctica 2 SWAP - Nuria Manzano Mata</title>
+</head>
+<body>
+    <h1>Práctica 2 SWAP - Nuria Manzano Mata</h1>
+    <p>La dirección IP del servidor es: 192.168.10.6</p></body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Práctica 2 SWAP - Nuria Manzano Mata</title>
+</head>
+<body>
+    <h1>Práctica 2 SWAP - Nuria Manzano Mata</h1>
+    <p>La dirección IP del servidor es: 192.168.10.7</p></body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Práctica 2 SWAP - Nuria Manzano Mata</title>
+</head>
+<body>
+    <h1>Práctica 2 SWAP - Nuria Manzano Mata</h1>
+    <p>La dirección IP del servidor es: 192.168.10.8</p></body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Práctica 2 SWAP - Nuria Manzano Mata</title>
+</head>
+<body>
+    <h1>Práctica 2 SWAP - Nuria Manzano Mata</h1>
+    <p>La dirección IP del servidor es: 192.168.10.9</p></body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Práctica 2 SWAP - Nuria Manzano Mata</title>
+</head>
+<body>
+    <h1>Práctica 2 SWAP - Nuria Manzano Mata</h1>
+    <p>La dirección IP del servidor es: 192.168.10.2</p></body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Práctica 2 SWAP - Nuria Manzano Mata</title>
+</head>
+<body>
+    <h1>Práctica 2 SWAP - Nuria Manzano Mata</h1>
+    <p>La dirección IP del servidor es: 192.168.10.4</p></body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Práctica 2 SWAP - Nuria Manzano Mata</title>
+</head>
+<body>
+    <h1>Práctica 2 SWAP - Nuria Manzano Mata</h1>
+    <p>La dirección IP del servidor es: 192.168.10.6</p></body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Práctica 2 SWAP - Nuria Manzano Mata</title>
+</head>
+<body>
+    <h1>Práctica 2 SWAP - Nuria Manzano Mata</h1>
+    <p>La dirección IP del servidor es: 192.168.10.7</p></body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Práctica 2 SWAP - Nuria Manzano Mata</title>
+</head>
+<body>
+    <h1>Práctica 2 SWAP - Nuria Manzano Mata</h1>
+    <p>La dirección IP del servidor es: 192.168.10.8</p></body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Práctica 2 SWAP - Nuria Manzano Mata</title>
+</head>
+<body>
+    <h1>Práctica 2 SWAP - Nuria Manzano Mata</h1>
+    <p>La dirección IP del servidor es: 192.168.10.9</p></body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Práctica 2 SWAP - Nuria Manzano Mata</title>
+</head>
+<body>
+    <h1>Práctica 2 SWAP - Nuria Manzano Mata</h1>
+    <p>La dirección IP del servidor es: 192.168.10.2</p></body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Práctica 2 SWAP - Nuria Manzano Mata</title>
+</head>
+<body>
+    <h1>Práctica 2 SWAP - Nuria Manzano Mata</h1>
+    <p>La dirección IP del servidor es: 192.168.10.4</p></body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Práctica 2 SWAP - Nuria Manzano Mata</title>
+</head>
+<body>
+    <h1>Práctica 2 SWAP - Nuria Manzano Mata</h1>
+    <p>La dirección IP del servidor es: 192.168.10.6</p></body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Práctica 2 SWAP - Nuria Manzano Mata</title>
+</head>
+<body>
+    <h1>Práctica 2 SWAP - Nuria Manzano Mata</h1>
+    <p>La dirección IP del servidor es: 192.168.10.7</p></body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Práctica 2 SWAP - Nuria Manzano Mata</title>
+</head>
+<body>
+    <h1>Práctica 2 SWAP - Nuria Manzano Mata</h1>
+    <p>La dirección IP del servidor es: 192.168.10.8</p></body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Práctica 2 SWAP - Nuria Manzano Mata</title>
+</head>
+<body>
+    <h1>Práctica 2 SWAP - Nuria Manzano Mata</h1>
+    <p>La dirección IP del servidor es: 192.168.10.9</p></body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Práctica 2 SWAP - Nuria Manzano Mata</title>
+</head>
+<body>
+    <h1>Práctica 2 SWAP - Nuria Manzano Mata</h1>
+    <p>La dirección IP del servidor es: 192.168.10.2</p></body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Práctica 2 SWAP - Nuria Manzano Mata</title>
+</head>
+<body>
+    <h1>Práctica 2 SWAP - Nuria Manzano Mata</h1>
+    <p>La dirección IP del servidor es: 192.168.10.4</p></body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Práctica 2 SWAP - Nuria Manzano Mata</title>
+</head>
+<body>
+    <h1>Práctica 2 SWAP - Nuria Manzano Mata</h1>
+    <p>La dirección IP del servidor es: 192.168.10.6</p></body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Práctica 2 SWAP - Nuria Manzano Mata</title>
+</head>
+<body>
+    <h1>Práctica 2 SWAP - Nuria Manzano Mata</h1>
+    <p>La dirección IP del servidor es: 192.168.10.7</p></body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Práctica 2 SWAP - Nuria Manzano Mata</title>
+</head>
+<body>
+    <h1>Práctica 2 SWAP - Nuria Manzano Mata</h1>
+    <p>La dirección IP del servidor es: 192.168.10.8</p></body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Práctica 2 SWAP - Nuria Manzano Mata</title>
+</head>
+<body>
+    <h1>Práctica 2 SWAP - Nuria Manzano Mata</h1>
+    <p>La dirección IP del servidor es: 192.168.10.9</p></body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Práctica 2 SWAP - Nuria Manzano Mata</title>
+</head>
+<body>
+    <h1>Práctica 2 SWAP - Nuria Manzano Mata</h1>
+    <p>La dirección IP del servidor es: 192.168.10.2</p></body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Práctica 2 SWAP - Nuria Manzano Mata</title>
+</head>
+<body>
+    <h1>Práctica 2 SWAP - Nuria Manzano Mata</h1>
+    <p>La dirección IP del servidor es: 192.168.10.4</p></body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Práctica 2 SWAP - Nuria Manzano Mata</title>
+</head>
+<body>
+    <h1>Práctica 2 SWAP - Nuria Manzano Mata</h1>
+    <p>La dirección IP del servidor es: 192.168.10.6</p></body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Práctica 2 SWAP - Nuria Manzano Mata</title>
+</head>
+<body>
+    <h1>Práctica 2 SWAP - Nuria Manzano Mata</h1>
+    <p>La dirección IP del servidor es: 192.168.10.7</p></body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Práctica 2 SWAP - Nuria Manzano Mata</title>
+</head>
+<body>
+    <h1>Práctica 2 SWAP - Nuria Manzano Mata</h1>
+    <p>La dirección IP del servidor es: 192.168.10.8</p></body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Práctica 2 SWAP - Nuria Manzano Mata</title>
+</head>
+<body>
+    <h1>Práctica 2 SWAP - Nuria Manzano Mata</h1>
+    <p>La dirección IP del servidor es: 192.168.10.9</p></body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Práctica 2 SWAP - Nuria Manzano Mata</title>
+</head>
+<body>
+    <h1>Práctica 2 SWAP - Nuria Manzano Mata</h1>
+    <p>La dirección IP del servidor es: 192.168.10.2</p></body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Práctica 2 SWAP - Nuria Manzano Mata</title>
+</head>
+<body>
+    <h1>Práctica 2 SWAP - Nuria Manzano Mata</h1>
+    <p>La dirección IP del servidor es: 192.168.10.4</p></body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Práctica 2 SWAP - Nuria Manzano Mata</title>
+</head>
+<body>
+    <h1>Práctica 2 SWAP - Nuria Manzano Mata</h1>
+    <p>La dirección IP del servidor es: 192.168.10.6</p></body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Práctica 2 SWAP - Nuria Manzano Mata</title>
+</head>
+<body>
+    <h1>Práctica 2 SWAP - Nuria Manzano Mata</h1>
+    <p>La dirección IP del servidor es: 192.168.10.7</p></body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Práctica 2 SWAP - Nuria Manzano Mata</title>
+</head>
+<body>
+    <h1>Práctica 2 SWAP - Nuria Manzano Mata</h1>
+    <p>La dirección IP del servidor es: 192.168.10.8</p></body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Práctica 2 SWAP - Nuria Manzano Mata</title>
+</head>
+<body>
+    <h1>Práctica 2 SWAP - Nuria Manzano Mata</h1>
+    <p>La dirección IP del servidor es: 192.168.10.9</p></body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Práctica 2 SWAP - Nuria Manzano Mata</title>
+</head>
+<body>
+    <h1>Práctica 2 SWAP - Nuria Manzano Mata</h1>
+    <p>La dirección IP del servidor es: 192.168.10.2</p></body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Práctica 2 SWAP - Nuria Manzano Mata</title>
+</head>
+<body>
+    <h1>Práctica 2 SWAP - Nuria Manzano Mata</h1>
+    <p>La dirección IP del servidor es: 192.168.10.4</p></body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Práctica 2 SWAP - Nuria Manzano Mata</title>
+</head>
+<body>
+    <h1>Práctica 2 SWAP - Nuria Manzano Mata</h1>
+    <p>La dirección IP del servidor es: 192.168.10.6</p></body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Práctica 2 SWAP - Nuria Manzano Mata</title>
+</head>
+<body>
+    <h1>Práctica 2 SWAP - Nuria Manzano Mata</h1>
+    <p>La dirección IP del servidor es: 192.168.10.7</p></body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Práctica 2 SWAP - Nuria Manzano Mata</title>
+</head>
+<body>
+    <h1>Práctica 2 SWAP - Nuria Manzano Mata</h1>
+    <p>La dirección IP del servidor es: 192.168.10.8</p></body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Práctica 2 SWAP - Nuria Manzano Mata</title>
+</head>
+<body>
+    <h1>Práctica 2 SWAP - Nuria Manzano Mata</h1>
+    <p>La dirección IP del servidor es: 192.168.10.9</p></body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Práctica 2 SWAP - Nuria Manzano Mata</title>
+</head>
+<body>
+    <h1>Práctica 2 SWAP - Nuria Manzano Mata</h1>
+    <p>La dirección IP del servidor es: 192.168.10.2</p></body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Práctica 2 SWAP - Nuria Manzano Mata</title>
+</head>
+<body>
+    <h1>Práctica 2 SWAP - Nuria Manzano Mata</h1>
+    <p>La dirección IP del servidor es: 192.168.10.4</p></body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Práctica 2 SWAP - Nuria Manzano Mata</title>
+</head>
+<body>
+    <h1>Práctica 2 SWAP - Nuria Manzano Mata</h1>
+    <p>La dirección IP del servidor es: 192.168.10.6</p></body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Práctica 2 SWAP - Nuria Manzano Mata</title>
+</head>
+<body>
+    <h1>Práctica 2 SWAP - Nuria Manzano Mata</h1>
+    <p>La dirección IP del servidor es: 192.168.10.7</p></body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Práctica 2 SWAP - Nuria Manzano Mata</title>
+</head>
+<body>
+    <h1>Práctica 2 SWAP - Nuria Manzano Mata</h1>
+    <p>La dirección IP del servidor es: 192.168.10.8</p></body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Práctica 2 SWAP - Nuria Manzano Mata</title>
+</head>
+<body>
+    <h1>Práctica 2 SWAP - Nuria Manzano Mata</h1>
+    <p>La dirección IP del servidor es: 192.168.10.9</p></body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Práctica 2 SWAP - Nuria Manzano Mata</title>
+</head>
+<body>
+    <h1>Práctica 2 SWAP - Nuria Manzano Mata</h1>
+    <p>La dirección IP del servidor es: 192.168.10.2</p></body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Práctica 2 SWAP - Nuria Manzano Mata</title>
+</head>
+<body>
+    <h1>Práctica 2 SWAP - Nuria Manzano Mata</h1>
+    <p>La dirección IP del servidor es: 192.168.10.4</p></body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Práctica 2 SWAP - Nuria Manzano Mata</title>
+</head>
+<body>
+    <h1>Práctica 2 SWAP - Nuria Manzano Mata</h1>
+    <p>La dirección IP del servidor es: 192.168.10.6</p></body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Práctica 2 SWAP - Nuria Manzano Mata</title>
+</head>
+<body>
+    <h1>Práctica 2 SWAP - Nuria Manzano Mata</h1>
+    <p>La dirección IP del servidor es: 192.168.10.7</p></body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Práctica 2 SWAP - Nuria Manzano Mata</title>
+</head>
+<body>
+    <h1>Práctica 2 SWAP - Nuria Manzano Mata</h1>
+    <p>La dirección IP del servidor es: 192.168.10.8</p></body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Práctica 2 SWAP - Nuria Manzano Mata</title>
+</head>
+<body>
+    <h1>Práctica 2 SWAP - Nuria Manzano Mata</h1>
+    <p>La dirección IP del servidor es: 192.168.10.9</p></body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Práctica 2 SWAP - Nuria Manzano Mata</title>
+</head>
+<body>
+    <h1>Práctica 2 SWAP - Nuria Manzano Mata</h1>
+    <p>La dirección IP del servidor es: 192.168.10.2</p></body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Práctica 2 SWAP - Nuria Manzano Mata</title>
+</head>
+<body>
+    <h1>Práctica 2 SWAP - Nuria Manzano Mata</h1>
+    <p>La dirección IP del servidor es: 192.168.10.4</p></body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Práctica 2 SWAP - Nuria Manzano Mata</title>
+</head>
+<body>
+    <h1>Práctica 2 SWAP - Nuria Manzano Mata</h1>
+    <p>La dirección IP del servidor es: 192.168.10.6</p></body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Práctica 2 SWAP - Nuria Manzano Mata</title>
+</head>
+<body>
+    <h1>Práctica 2 SWAP - Nuria Manzano Mata</h1>
+    <p>La dirección IP del servidor es: 192.168.10.7</p></body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Práctica 2 SWAP - Nuria Manzano Mata</title>
+</head>
+<body>
+    <h1>Práctica 2 SWAP - Nuria Manzano Mata</h1>
+    <p>La dirección IP del servidor es: 192.168.10.8</p></body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Práctica 2 SWAP - Nuria Manzano Mata</title>
+</head>
+<body>
+    <h1>Práctica 2 SWAP - Nuria Manzano Mata</h1>
+    <p>La dirección IP del servidor es: 192.168.10.9</p></body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Práctica 2 SWAP - Nuria Manzano Mata</title>
+</head>
+<body>
+    <h1>Práctica 2 SWAP - Nuria Manzano Mata</h1>
+    <p>La dirección IP del servidor es: 192.168.10.2</p></body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Práctica 2 SWAP - Nuria Manzano Mata</title>
+</head>
+<body>
+    <h1>Práctica 2 SWAP - Nuria Manzano Mata</h1>
+    <p>La dirección IP del servidor es: 192.168.10.4</p></body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Práctica 2 SWAP - Nuria Manzano Mata</title>
+</head>
+<body>
+    <h1>Práctica 2 SWAP - Nuria Manzano Mata</h1>
+    <p>La dirección IP del servidor es: 192.168.10.6</p></body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Práctica 2 SWAP - Nuria Manzano Mata</title>
+</head>
+<body>
+    <h1>Práctica 2 SWAP - Nuria Manzano Mata</h1>
+    <p>La dirección IP del servidor es: 192.168.10.7</p></body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Práctica 2 SWAP - Nuria Manzano Mata</title>
+</head>
+<body>
+    <h1>Práctica 2 SWAP - Nuria Manzano Mata</h1>
+    <p>La dirección IP del servidor es: 192.168.10.8</p></body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Práctica 2 SWAP - Nuria Manzano Mata</title>
+</head>
+<body>
+    <h1>Práctica 2 SWAP - Nuria Manzano Mata</h1>
+    <p>La dirección IP del servidor es: 192.168.10.9</p></body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Práctica 2 SWAP - Nuria Manzano Mata</title>
+</head>
+<body>
+    <h1>Práctica 2 SWAP - Nuria Manzano Mata</h1>
+    <p>La dirección IP del servidor es: 192.168.10.2</p></body>
+</html>

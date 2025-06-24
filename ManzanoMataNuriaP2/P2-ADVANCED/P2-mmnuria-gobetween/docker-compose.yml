@@ -1,0 +1,137 @@
+version: '3.9'
+
+services:
+  web1:
+    build:
+      context: .
+      dockerfile: DockerfileApache
+    image: mmnuria-apache-image:p2
+    container_name: web1_gobetween
+    volumes:
+      - ./web_mmnuria:/var/www/html
+    networks:
+      red_web:
+        ipv4_address: 192.168.10.18
+      red_servicios:
+        ipv4_address: 192.168.20.18
+    ports:
+      - "8080:80"
+    restart: unless-stopped
+    
+  web2:
+    image: mmnuria-apache-image:p2
+    container_name: web2_gobetween
+    volumes:
+      - ./web_mmnuria:/var/www/html
+    networks:
+      red_web:
+        ipv4_address: 192.168.10.19
+      red_servicios:
+        ipv4_address: 192.168.20.19
+    ports:
+      - "8081:80"
+    restart: unless-stopped
+    
+  web3:
+    image: mmnuria-apache-image:p2
+    container_name: web3_gobetween
+    volumes:
+      - ./web_mmnuria:/var/www/html
+    networks:
+      red_web:
+        ipv4_address: 192.168.10.20
+      red_servicios:
+        ipv4_address: 192.168.20.20
+    ports:
+      - "8082:80"
+    restart: unless-stopped
+    
+  web4:
+    image: mmnuria-apache-image:p2
+    container_name: web4_gobetween
+    volumes:
+      - ./web_mmnuria:/var/www/html
+    networks:
+      red_web:
+        ipv4_address: 192.168.10.21
+      red_servicios:
+        ipv4_address: 192.168.20.21
+    ports:
+      - "8083:80"
+    restart: unless-stopped
+    
+  web5:
+    image: mmnuria-apache-image:p2
+    container_name: web5_gobetween
+    volumes:
+      - ./web_mmnuria:/var/www/html
+    networks:
+      red_web:
+        ipv4_address: 192.168.10.22
+      red_servicios:
+        ipv4_address: 192.168.20.22
+    ports:
+      - "8084:80"
+    restart: unless-stopped
+    
+  web6:
+    image: mmnuria-apache-image:p2
+    container_name: web6_gobetween
+    volumes:
+      - ./web_mmnuria:/var/www/html
+    networks:
+      red_web:
+        ipv4_address: 192.168.10.23
+      red_servicios:
+        ipv4_address: 192.168.20.23
+    ports:
+      - "8085:80"
+    restart: unless-stopped
+    
+  web7:
+    image: mmnuria-apache-image:p2
+    container_name: web7_gobetween
+    volumes:
+      - ./web_mmnuria:/var/www/html
+    networks:
+      red_web:
+        ipv4_address: 192.168.10.24
+      red_servicios:
+        ipv4_address: 192.168.20.24
+    ports:
+      - "8086:80"
+    restart: unless-stopped
+    
+  web8:
+    image: mmnuria-apache-image:p2
+    container_name: web8_gobetween
+    volumes:
+      - ./web_mmnuria:/var/www/html
+    networks:
+      red_web:
+        ipv4_address: 192.168.10.25
+      red_servicios:
+        ipv4_address: 192.168.20.25
+    ports:
+      - "8087:80"
+    restart: unless-stopped
+    
+  # Balanceador
+  gobetween:
+    image: yyyar/gobetween
+    container_name: gobetween
+    volumes:
+      - ./gobetween.toml:/etc/gobetween/conf/gobetween.toml
+    ports:
+      - "8091:8082" 
+    networks:
+      - red_web
+    restart: unless-stopped
+
+networks:
+  red_web:
+    external: true
+    name: p2-mmnuria-nginx_red_web
+  red_servicios:
+    external: true
+    name: p2-mmnuria-nginx_red_servicios

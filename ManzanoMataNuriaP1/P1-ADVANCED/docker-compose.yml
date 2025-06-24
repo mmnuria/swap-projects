@@ -1,0 +1,129 @@
+version: '3.8'
+
+services:
+  apache1:
+    build:
+      context: .
+      dockerfile: ./dockerfiles/DockerfileApache_mmnuria_advanced
+    image: mmnuria-apache-advanced:latest
+    volumes:
+      - ./web_mmnuria:/var/www/html
+    networks:
+      red_web:
+        ipv4_address: 192.168.100.10
+      red_servicios:
+        ipv4_address: 192.168.200.10
+    ports:
+      - "8088:80"
+    restart: unless-stopped
+  
+  apache2:
+    image: mmnuria-apache-advanced:latest
+    volumes:
+      - ./web_mmnuria:/var/www/html
+    networks:
+      red_web:
+        ipv4_address: 192.168.100.11
+      red_servicios:
+        ipv4_address: 192.168.200.11
+    ports:
+      - "8089:80"
+    restart: unless-stopped
+  
+  nginx1:
+    build:
+      context: .
+      dockerfile: ./dockerfiles/DockerfileNginx_mmnuria
+    image: mmnuria-nginx:latest
+    volumes:
+      - ./web_mmnuria:/var/www/html
+      - ./config/nginx/nginx.conf:/etc/nginx/nginx.conf
+    networks:
+      red_web:
+        ipv4_address: 192.168.100.20
+      red_servicios:
+        ipv4_address: 192.168.200.20
+    ports:
+      - "8090:80"
+    restart: unless-stopped
+  
+  nginx2:
+    image: mmnuria-nginx:latest
+    volumes:
+      - ./web_mmnuria:/var/www/html
+      - ./config/nginx/nginx.conf:/etc/nginx/nginx.conf
+    networks:
+      red_web:
+        ipv4_address: 192.168.100.21
+      red_servicios:
+        ipv4_address: 192.168.200.21
+    ports:
+      - "8091:80"
+    restart: unless-stopped
+  
+  lighttpd1:
+    build:
+      context: .
+      dockerfile: ./dockerfiles/DockerfileLighttpd_mmnuria
+    image: mmnuria-lighttpd:latest
+    volumes:
+      - ./web_mmnuria:/var/www/html
+      - ./config/lighttpd/lighttpd.conf:/etc/lighttpd/lighttpd.conf
+    networks:
+      red_web:
+        ipv4_address: 192.168.100.30
+      red_servicios:
+        ipv4_address: 192.168.200.30
+    ports:
+      - "8092:80"
+    restart: unless-stopped
+  
+  lighttpd2:
+    image: mmnuria-lighttpd:latest
+    volumes:
+      - ./web_mmnuria:/var/www/html
+      - ./config/lighttpd/lighttpd.conf:/etc/lighttpd/lighttpd.conf
+    networks:
+      red_web:
+        ipv4_address: 192.168.100.31
+      red_servicios:
+        ipv4_address: 192.168.200.31
+    ports:
+      - "8093:80"
+    restart: unless-stopped
+  
+  # Contenedor para gestión de redes
+  network_manager:
+    image: alpine:latest
+    container_name: network_manager
+    cap_add:
+      - NET_ADMIN
+    privileged: true
+    volumes:
+      - ./scripts:/scripts
+    entrypoint: ["/bin/sh", "/scripts/configuracion-redes.sh"]
+    networks:
+      red_web:
+        ipv4_address: 192.168.100.2
+      red_servicios:
+        ipv4_address: 192.168.200.2
+    restart: unless-stopped
+
+
+networks:
+  red_web:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 192.168.100.0/24
+          gateway: 192.168.100.1
+    driver_opts:
+      com.docker.network.bridge.name: br_red_web
+  red_servicios:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 192.168.200.0/24
+          gateway: 192.168.200.1
+    driver_opts:
+      com.docker.network.bridge.name: br_red_svs

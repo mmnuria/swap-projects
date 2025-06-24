@@ -1,0 +1,40 @@
+#versión 11 de debian
+FROM debian:bullseye-slim 
+# Instalación Apache, PHP y herramientas de red
+RUN apt-get update && apt-get install -y \
+    apache2 \
+    php \
+    libapache2-mod-php \
+    openssl \
+    iputils-ping \
+    net-tools \
+    curl \
+    iproute2 \
+    && apt-get clean \
+    && rm -rf /var/lib/apt/lists/*
+
+# Habilita el módulo Apache para PHP (necesario para que Apache procese archivos PHP) y SSL
+RUN a2enmod php7.4 ssl
+
+# Crear directorio para certificados
+RUN mkdir -p /etc/apache2/ssl
+
+# Copiar los certificados SSL y clave privada
+COPY certificados_mmnuria/certificado_mmnuria.crt /etc/apache2/ssl/certificado_mmnuria.crt
+COPY certificados_mmnuria/certificado_mmnuria.key /etc/apache2/ssl/certificado_mmnuria.key
+
+# Establecer permisos seguros
+RUN chmod 600 /etc/apache2/ssl/certificado_mmnuria.*
+
+# Copiar archivo de configuración
+COPY mmnuria-apache-ssl.conf /etc/apache2/sites-available/mmnuria-apache-ssl.conf
+
+# Habilitar el sitio SSL personalizado
+RUN a2ensite mmnuria-apache-ssl
+
+# Exponer puertos HTTP y HTTPS
+EXPOSE 80
+EXPOSE 443
+
+# Mantener Apache en ejecución
+CMD ["apache2ctl", "-D", "FOREGROUND"]

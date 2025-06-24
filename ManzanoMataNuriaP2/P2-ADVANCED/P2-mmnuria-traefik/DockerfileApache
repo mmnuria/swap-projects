@@ -1,0 +1,28 @@
+#versión 11 de debian
+FROM debian:bullseye-slim 
+# Instalación Apache, PHP y herramientas de red
+RUN apt-get update && apt-get install -y \
+    apache2 \
+    php \
+    libapache2-mod-php \
+    iputils-ping \
+    net-tools \
+    curl \
+    iproute2 \
+    && apt-get clean \
+    && rm -rf /var/lib/apt/lists/*
+
+# Habilita el módulo Apache para PHP (necesario para que Apache procese archivos PHP)
+RUN a2enmod php7.4
+
+# Establecer ServerName para evitar el mensaje de advertencia
+RUN echo "ServerName localhost" > /etc/apache2/conf-available/servername.conf && \
+    a2enconf servername
+# Establecer directorio de trabajo
+WORKDIR /var/www/html
+
+# Puerto HTTP estándar
+EXPOSE 80
+
+# Mantener apache en ejecución
+CMD ["apache2ctl", "-D", "FOREGROUND"]

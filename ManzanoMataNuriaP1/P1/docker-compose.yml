@@ -1,0 +1,129 @@
+version: '3'
+
+services:
+  web1:
+    build:
+      context: .
+      dockerfile: DockerfileApache_mmnuria
+    image: mmnuria-apache-image:p1
+    container_name: web1
+    volumes:
+      - ./web_mmnuria:/var/www/html
+    networks:
+      red_web:
+        ipv4_address: 192.168.10.2
+      red_servicios:
+        ipv4_address: 192.168.20.2
+    ports:
+      - "8080:80"
+    restart: unless-stopped
+
+  web2:
+    image: mmnuria-apache-image:p1
+    container_name: web2
+    volumes:
+      - ./web_mmnuria:/var/www/html
+    networks:
+      red_web:
+        ipv4_address: 192.168.10.3
+      red_servicios:
+        ipv4_address: 192.168.20.3
+    ports:
+      - "8081:80"
+    restart: unless-stopped
+
+  web3:
+    image: mmnuria-apache-image:p1
+    container_name: web3
+    volumes:
+      - ./web_mmnuria:/var/www/html
+    networks:
+      red_web:
+        ipv4_address: 192.168.10.4
+      red_servicios:
+        ipv4_address: 192.168.20.4
+    ports:
+      - "8082:80"
+    restart: unless-stopped
+
+  web4:
+    image: mmnuria-apache-image:p1
+    container_name: web4
+    volumes:
+      - ./web_mmnuria:/var/www/html
+    networks:
+      red_web:
+        ipv4_address: 192.168.10.5
+      red_servicios:
+        ipv4_address: 192.168.20.5
+    ports:
+      - "8083:80"
+    restart: unless-stopped
+
+  web5:
+    image: mmnuria-apache-image:p1
+    container_name: web5
+    volumes:
+      - ./web_mmnuria:/var/www/html
+    networks:
+      red_web:
+        ipv4_address: 192.168.10.6
+      red_servicios:
+        ipv4_address: 192.168.20.6
+    ports:
+      - "8084:80"
+    restart: unless-stopped
+
+  web6:
+    image: mmnuria-apache-image:p1
+    container_name: web6
+    volumes:
+      - ./web_mmnuria:/var/www/html
+    networks:
+      red_web:
+        ipv4_address: 192.168.10.7
+      red_servicios:
+        ipv4_address: 192.168.20.7
+    ports:
+      - "8085:80"
+    restart: unless-stopped
+
+  web7:
+    image: mmnuria-apache-image:p1
+    container_name: web7
+    volumes:
+      - ./web_mmnuria:/var/www/html
+    networks:
+      red_web:
+        ipv4_address: 192.168.10.8
+      red_servicios:
+        ipv4_address: 192.168.20.8
+    ports:
+      - "8086:80"
+    restart: unless-stopped
+
+  web8:
+    image: mmnuria-apache-image:p1
+    container_name: web8
+    volumes:
+      - ./web_mmnuria:/var/www/html
+    networks:
+      red_web:
+        ipv4_address: 192.168.10.9
+      red_servicios:
+        ipv4_address: 192.168.20.9
+    ports:
+      - "8087:80"
+    restart: unless-stopped
+
+networks:
+  red_web:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 192.168.10.0/24
+  red_servicios:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 192.168.20.0/24
